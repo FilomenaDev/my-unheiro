@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".ui.Profile.Profile"
+    android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dip">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_marginBottom="20sp"
+                android:src="@mipmap/ic_default_user" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@android:color/darker_gray" />
+
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/purple_700"
+                    android:hint="Nome"
+                    android:layout_marginTop="30dp"
+                    android:inputType="textAutoCorrect"
+                    android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple_700"
+                android:padding="20sp"
+                android:layout_marginTop="60dp"
+                android:text="Sair"
+                android:textSize="16dp"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

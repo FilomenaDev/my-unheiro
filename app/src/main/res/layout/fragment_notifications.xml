@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="4dp"
+    android:layout_gravity="center"
+    tools:context=".ui.notifications.NotificationsFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/card1"
+            style="@style/CardView.Light"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="4dp"
+            android:elevation="6dp"
+            android:padding="15dp"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:padding="8dp"
+                    android:text="Data"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/btn_data"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/ic_baseline_date_range"
+                    android:inputType="datetime" />
+
+                <TextView
+                    android:id="@+id/textData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="20dp"
+                    android:text="2021/02/04"
+                    android:layout_below="@+id/data"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            style="@style/CardView.Light"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="4dp"
+            android:elevation="6dp"
+            android:layout_below="@+id/card1"
+            android:layout_marginTop="40dp"
+            android:padding="15dp"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/data1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:padding="8dp"
+                    android:text="Horário"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/btn_time"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/ic_baseline_access_time"
+                    android:inputType="datetime" />
+
+                <TextView
+                    android:id="@+id/textTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="20dp"
+                    android:text="00:00:00"
+                    android:layout_below="@+id/data1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+     <LinearLayout
+         android:id="@+id/text_notifications"
+         android:layout_marginTop="20dp"
+         android:orientation="horizontal"
+         android:layout_below="@+id/card2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <RadioGroup
+             android:id="@+id/radioGrupo"
+             android:layout_width="match_parent"
+             android:orientation="horizontal"
+             android:layout_height="wrap_content">
+             <RadioButton
+                 android:id="@+id/salao"
+                 android:text="Salão"
+                 android:textSize="14dp"
+                 android:layout_marginLeft="10dp"
+                 android:textColor="@color/black"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"/>
+
+             <RadioButton
+                 android:id="@+id/domicilio"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="100dp"
+                 android:text="Domicílo"
+                 android:textColor="@color/black"
+                 android:textSize="14dp" />
+         </RadioGroup>
+
+     </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/linear1"
+            android:layout_below="@+id/text_notifications"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/maos"
+                    android:text="Mãos"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_below="@+id/maos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="bottom">
+                    <LinearLayout
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioLayout">
+
+                    </LinearLayout>
+                    <co.ceryle.radiorealbutton.RadioRealButtonGroup
+                        android:id="@+id/radioRealButtonGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:rrbg_animateDrawables_enter="overshoot"
+                        app:rrbg_animateDrawables_enterDuration="500"
+                        app:rrbg_animateDrawables_exit="overshoot"
+                        app:rrbg_animateDrawables_exitDuration="500"
+                        app:rrbg_animateDrawables_scale="1.2"
+                        app:rrbg_animateTexts_enter="overshoot"
+                        app:rrbg_animateTexts_enterDuration="500"
+                        app:rrbg_bottomLineColor="@color/purple_700"
+                        app:rrbg_buttonsPaddingTop="14dp"
+                        app:rrbg_selectorAboveOfBottomLine="false"
+                        app:rrbg_selectorColor="@color/purple_500"
+                        app:rrbg_selectorSize="6dp"
+                        app:rrbg_selectorTop="true"
+                        tools:ignore="MissingClass">
+                        <co.ceryle.radiorealbutton.RadioRealButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:rrb_drawable="@drawable/gel"
+                            app:rrb_drawableGravity="top"
+                            app:rrb_drawableHeight="40dp"
+                            app:rrb_drawableWidth="40dp"
+                            app:rrb_rippleColor="@color/purple_700"
+                            app:rrb_text="Gelinho"
+                            app:rrb_textColor="@android:color/darker_gray"
+                            app:rrb_textSize="12sp"/>
+                        <co.ceryle.radiorealbutton.RadioRealButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:rrb_drawable="@drawable/gelinho"
+                            app:rrb_drawableGravity="top"
+                            app:rrb_drawableHeight="40dp"
+                            app:rrb_drawableWidth="40dp"
+                            app:rrb_rippleColor="@color/purple_700"
+                            app:rrb_text="Gel"
+                            app:rrb_textColor="@android:color/darker_gray"
+                            app:rrb_textSize="12sp"/>
+                        <co.ceryle.radiorealbutton.RadioRealButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:rrb_drawable="@drawable/manicure"
+                            app:rrb_drawableGravity="top"
+                            app:rrb_drawableHeight="40dp"
+                            app:rrb_drawableWidth="40dp"
+                            app:rrb_rippleColor="@color/purple_700"
+                            app:rrb_text="Normal"
+                            app:rrb_textColor="@android:color/darker_gray"
+                            app:rrb_textSize="12sp"/>
+                        <co.ceryle.radiorealbutton.RadioRealButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:rrb_drawable="@drawable/noiva"
+                            app:rrb_drawableGravity="top"
+                            app:rrb_drawableHeight="40dp"
+                            app:rrb_drawableWidth="40dp"
+                            app:rrb_rippleColor="@color/purple_700"
+                            app:rrb_text="Noiva"
+                            app:rrb_textColor="@android:color/darker_gray"
+                            app:rrb_textSize="12sp"/>
+                    </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/type1"
+                android:layout_below="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/pes"
+                    android:text="Pé"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_below="@+id/pes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="bottom">
+                    <LinearLayout
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioLayout1">
+
+                    </LinearLayout>
+                    <co.ceryle.radiorealbutton.RadioRealButtonGroup
+                        android:id="@+id/radioRealButtonGroup1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:rrbg_animateDrawables_enter="overshoot"
+                        app:rrbg_animateDrawables_enterDuration="500"
+                        app:rrbg_animateDrawables_exit="overshoot"
+                        app:rrbg_animateDrawables_exitDuration="500"
+                        app:rrbg_animateDrawables_scale="1.2"
+                        app:rrbg_animateTexts_enter="overshoot"
+                        app:rrbg_animateTexts_enterDuration="500"
+                        app:rrbg_bottomLineColor="@color/purple_700"
+                        app:rrbg_buttonsPaddingTop="14dp"
+                        app:rrbg_selectorAboveOfBottomLine="false"
+                        app:rrbg_selectorColor="@color/purple_500"
+                        app:rrbg_selectorSize="6dp"
+                        app:rrbg_selectorTop="true"
+                        tools:ignore="MissingClass">
+                        <co.ceryle.radiorealbutton.RadioRealButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:rrb_drawable="@drawable/normal_pe"
+                            app:rrb_drawableGravity="top"
+                            app:rrb_drawableHeight="40dp"
+                            app:rrb_drawableWidth="40dp"
+                            app:rrb_rippleColor="@color/purple_700"
+                            app:rrb_text="Normal"
+                            app:rrb_textColor="@android:color/darker_gray"
+                            app:rrb_textSize="12sp"/>
+                        <co.ceryle.radiorealbutton.RadioRealButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:rrb_drawable="@drawable/gel_pe1"
+                            app:rrb_drawableGravity="top"
+                            app:rrb_drawableHeight="40dp"
+                            app:rrb_drawableWidth="40dp"
+                            app:rrb_rippleColor="@color/purple_700"
+                            app:rrb_text="Gelinho"
+                            app:rrb_textColor="@android:color/darker_gray"
+                            app:rrb_textSize="12sp"/>
+                        <co.ceryle.radiorealbutton.RadioRealButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:rrb_drawable="@drawable/gel_pe"
+                            app:rrb_drawableGravity="top"
+                            app:rrb_drawableHeight="40dp"
+                            app:rrb_drawableWidth="40dp"
+                            app:rrb_rippleColor="@color/purple_700"
+                            app:rrb_text="Gel"
+                            app:rrb_textColor="@android:color/darker_gray"
+                            app:rrb_textSize="12sp"/>
+                        <co.ceryle.radiorealbutton.RadioRealButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:rrb_drawable="@drawable/noiva_pe"
+                            app:rrb_drawableGravity="top"
+                            app:rrb_drawableHeight="40dp"
+                            app:rrb_drawableWidth="40dp"
+                            app:rrb_rippleColor="@color/purple_700"
+                            app:rrb_text="Noiva"
+                            app:rrb_textColor="@android:color/darker_gray"
+                            app:rrb_textSize="12sp"/>
+
+                    </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_agenda"
+            android:layout_below="@+id/linear1"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:text="Agendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</ScrollView>
+
+
+</RelativeLayout>

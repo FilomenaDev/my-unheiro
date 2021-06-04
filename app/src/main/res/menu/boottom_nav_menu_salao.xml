@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_salao_agendados"
+        android:icon="@drawable/ic_baseline_date_range"
+        android:title="@string/title_agendados_salao" />
+
+    <item
+        android:id="@+id/navigation_salao_servicos"
+        android:icon="@drawable/ic_baseline_date_range"
+        android:title="@string/title_servico_salao" />
+
+    <item
+        android:id="@+id/navigation_salao_perfil"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_perfil_salao" />
+
+
+    <item
+        android:id="@+id/navigation_salao_notificacao"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_notificacao_salao" />
+
+</menu>

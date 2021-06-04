@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_admin_home">
+
+    <fragment
+        android:id="@+id/navigation_admin_home"
+        android:name="com.filomenadeveloper.myunheiro.Comerciante.ui.Agendados.DashboardFragment"
+        tools:layout="@layout/fragment_agenda_salao" />
+
+    <fragment
+        android:id="@+id/navigation_admin_comerciante"
+        android:name="com.filomenadeveloper.myunheiro.Admin.ui.Adicionar.Fragment_AddComerciante"
+        tools:layout="@layout/fragment_servicos_salao" />
+
+    <fragment
+        android:id="@+id/navigation_admin_notificacao"
+        android:name="com.filomenadeveloper.myunheiro.Comerciante.ui.Profile.FragmentProfile"
+        tools:layout="@layout/fragment_perfil_salao" />
+
+</navigation>

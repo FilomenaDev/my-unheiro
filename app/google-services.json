@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "115847773921",
+    "project_id": "my-unheiro-2c46f",
+    "storage_bucket": "my-unheiro-2c46f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115847773921:android:380658fd21588f56c841a0",
+        "android_client_info": {
+          "package_name": "com.filomenadeveloper.myunheiro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115847773921-64knl2ivki1bj32avk5q27r453vak0ab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.filomenadeveloper.myunheiro",
+            "certificate_hash": "fa03843409d209bc56315b41805097941c6ce72c"
+          }
+        },
+        {
+          "client_id": "115847773921-j93j26396uuo7bv7pu8j3c5tek5fuspf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKwF_Jhvnhj08vnYhA94ifkn_WMmoWPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115847773921-j93j26396uuo7bv7pu8j3c5tek5fuspf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

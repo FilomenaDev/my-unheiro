@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_margin="4dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="4dp"
+    android:elevation="6dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/namecli"
+            android:layout_width="wrap_content"
+            android:text="Cliente A"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:textColor="@color/purple_700"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/imge_data"
+            android:layout_below="@+id/namecli"
+            android:src="@drawable/ic_baseline_date_range_24"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/data_agenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="68dp"
+            android:layout_toRightOf="@+id/imge_data"
+            android:text="2021/02/04"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+        <ImageView
+            android:id="@+id/image_time"
+            android:layout_below="@+id/imge_data"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_baseline_access_time_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/time_agenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="110dp"
+            android:layout_toRightOf="@+id/image_time"
+            android:text="2021/02/04"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/image_maos"
+            android:layout_toRightOf="@+id/time_agenda"
+            android:src="@drawable/ic_baseline_pan_tool"
+            android:layout_marginTop="106dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/image_pes"
+            android:layout_toRightOf="@+id/image_maos"
+            android:src="@drawable/img_pe1"
+            android:layout_marginTop="106dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/image_tipo"
+            android:layout_toRightOf="@+id/image_pes"
+            android:src="@drawable/ic_home_black_24dp"
+            android:layout_marginTop="106dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
